@@ -3,8 +3,6 @@ import "../App.css";
 import Nav from "./Nav";
 
 class App extends Component {
-  state = { hogs: [] }
-
   render() {
     return (
       <div className="App">
