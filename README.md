@@ -4,6 +4,7 @@
 
 ## Project goals:
 
+* on page load, fetch all of the hog tiles 
 * create an index displaying all hog tiles
 * render each hog name and picture in a tile
 * show the hog's details upon a user's click
@@ -23,7 +24,7 @@
 
 ## What we have so far:
 
-* a file containing all our hog data imported into App.js
+* a json file containing all our hog data. send your fetch request to `http://localhost:3001/hogs`
 * a folder of hog images
 * a functional nav component rendered in our App.js
 
@@ -39,12 +40,10 @@ Be sure to use good programming practices, such as clear variable names and sing
 
 ## Trying to get the Hog image to render?
 
-Importing relative images in React can be tricky. Here is an example: 
-
+Below is an example of how you might create an image for Augustus Gloop. Notice a trend between the pig name and the image name. 
 ```
 render(){
-  let pigImage = require('../hog-imgs/piggy_smalls.jpg') //how can we dynamically generate the filename?
-  return <img src={pigImage} />
+  return  <img src={`/hog-imgs/augustus_gloop.jpg`} />
 }
 
 ```
